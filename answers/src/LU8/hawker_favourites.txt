@@ -1,0 +1,5 @@
+Mi Goreng, 3.50000
+Chicken Rice, 4.00000
+Chapati, 3.00000
+Laksa, 3.20000
+Briyani, 6.250000
