@@ -1,34 +1,37 @@
-package LU6;
+package EmpDemo;
 
-import java.time.LocalDate;
-
-public class Emp {
+public class Emp extends Person {
 	private int id;
-	private String name;
-	private LocalDate dateOfBirth;
-	private LocalDate dateJoined;
+	private String email;
+	private double salary;
 	
-	public Emp(int id, String name, LocalDate dateOfBirth, LocalDate dateJoined) {
+	public Emp(int id, String email, char gender, double salary) {
+		super("", gender);
 		this.id = id;
-		this.name = name;
-		this.dateOfBirth = dateOfBirth;
-		this.dateJoined = dateJoined;
+		this.email = email;
+		this.salary = salary;
 	}
 
 	public int getId() {
 		return id;
 	}
 
-	public String getName() {
-		return name;
+	public String getEmail() {
+		return email;
 	}
 
-	public LocalDate getDateOfBirth() {
-		return dateOfBirth;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
-	public LocalDate getDateJoined() {
-		return dateJoined;
+	public double getSalary() {
+		return salary;
 	}
-
+	
+	public void displayInfo() {
+		super.displayInfo();
+		System.out.println("id field from Emp class: " + id);
+		System.out.println("email field from Emp class: " + email);
+		System.out.println("salary field from Emp class: " + salary);
+	}
 }
