@@ -1,4 +1,4 @@
-package EmpDemo;
+package LU6;
 
 public class Person {
 
